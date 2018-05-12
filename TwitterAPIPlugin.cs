@@ -27,11 +27,11 @@ namespace DNWS
 
         protected bool IsAction(string _action)
         {
-            return _action.ToLower().Equals(action.ToLower());
+            return _action/*.ToLower()*/.Equals(action/*.ToLower()*/);
         }
         protected bool IsMethod(string _method)
         {
-            return requestMethod.ToLower().Equals(_method.ToLower());
+            return requestMethod/*.ToLower()*/.Equals(_method/*.ToLower()*/);
         }
         protected Func<string, bool> IsNOE = String.IsNullOrEmpty;
         public new HTTPResponse GetResponse(HTTPRequest request)

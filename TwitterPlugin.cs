@@ -349,8 +349,8 @@ namespace DNWS
             HTTPResponse response = new HTTPResponse(200);
             StringBuilder sb = new StringBuilder();
             string session = request.GetRequestByKey("session");
-            string action = request.GetRequestByKey("action").ToLower();
-            if(action != null) action = action.ToLower();
+            string action = request.GetRequestByKey("action")/*.ToLower()*/;
+            //if(action != null) action = action.ToLower();
             string username = request.GetRequestByKey("username");
             string password = request.GetRequestByKey("password");
             string following = request.GetRequestByKey("following");
